@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import SearcherLineSeparate from './SearcherLineSeparate'
 import { searchesList, TSearchesList } from './searchesList'
 
 const SearchBar = () => {
@@ -14,7 +13,9 @@ const SearchBar = () => {
   }
 
   return (
-    <div className="w-full max-w-[584px] px-4 sm:px-0">
+    <div className="w-full max-w-[584px] px-4 sm:px-0 relative">
+      {/* Placeholder para mantener la altura cuando la barra está expandida */}
+      {showSuggestions && <div className="h-[46px]" />}
       <div
         className={`google-search-bar bg-white ${showSuggestions ? 'expanded' : ''}`}
       >
@@ -105,8 +106,7 @@ const SearchBar = () => {
           </div>
         </div>
         {showSuggestions && (
-          <div className="pb-[4px]">
-            <SearcherLineSeparate />
+          <div className="border-t border-[#e8e8e8] pb-[4px]">
             {searchesList?.map((singleSearch: TSearchesList) => (
               <div
                 key={singleSearch.text}
