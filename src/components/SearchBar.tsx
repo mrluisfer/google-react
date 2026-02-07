@@ -16,9 +16,7 @@ const SearchBar = () => {
     <div className="w-full max-w-[584px] px-4 sm:px-0 relative">
       {/* Placeholder para mantener la altura cuando la barra está expandida */}
       {showSuggestions && <div className="h-[46px]" />}
-      <div
-        className={`google-search-bar bg-white ${showSuggestions ? 'expanded' : ''}`}
-      >
+      <div className={`google-search-bar bg-white ${showSuggestions ? 'expanded' : ''}`}>
         <div className="flex items-center w-full h-[44px] px-[14px]">
           <div className="flex items-center justify-center w-[20px] h-[20px] mr-[13px]">
             <svg
@@ -123,9 +121,7 @@ const SearchBar = () => {
                     d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
                   />
                 </svg>
-                <span className="text-[#202124] flex-1">
-                  {singleSearch.text}
-                </span>
+                <span className="text-[#202124] flex-1">{singleSearch.text}</span>
               </div>
             ))}
           </div>
