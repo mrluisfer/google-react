@@ -1,34 +1,56 @@
-import React from 'react'
-import FooterLink from './FooterLink'
-
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className="absolute bottom-0 left-0 hidden w-full px-5 text-xs text-gray-700 bg-gray-100 border-t-2 lg:block">
-      <p className="select-none leading-8 cursor-text opacity-75">Some Country</p>
-      <hr />
-      <div className="flex items-center content-center justify-between py-2">
-        <div className="flex">
-          <FooterLink
-            url="https://ads.google.com/intl/es-419_mx/getstarted/?subid=mx-es-ha-awa-bk-c-cor!o3~CjwKCAjw64eJBhAGEiwABr9o2JL1fD_lak-i_sGGmM9vhE2W9AsaNaRUVsn7O0Z9yCvAJB9kfqqW6RoC2jQQAvD_BwE~78045488589~kwd-94527731~6518825888~435570599485&gclsrc=ds&gclsrc=ds"
-            text="Advertising"
-          />
-
-          <FooterLink
-            url="https://smallbusiness.withgoogle.com/intl/es-419_mx/help/#!/"
-            text="Business"
-          />
-
-          <FooterLink
-            url="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1"
-            text="About"
-          />
-
-          <FooterLink url="https://www.google.com/search/howsearchworks/" text="How Search works" />
+    <footer className="bg-[#f2f2f2] text-[#70757a] text-[14px]">
+      <div className="px-8 py-3 border-b border-[#dadce0]">
+        <span>Country</span>
+      </div>
+      <div className="flex flex-col sm:flex-row items-center justify-between px-8 py-3">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a
+            href="https://ads.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Advertising
+          </a>
+          <a
+            href="https://smallbusiness.withgoogle.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Business
+          </a>
+          <a
+            href="https://www.google.com/search/howsearchworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            How Search works
+          </a>
         </div>
-        <div className="flex">
-          <FooterLink url="https://policies.google.com/privacy?hl=es-419&fg=1" text="Privacy" />
-          <FooterLink url="https://policies.google.com/terms?hl=es-419&fg=1" text="Terms" />
-          <FooterLink url="/" text="References" />
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-2 sm:mt-0">
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://policies.google.com/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Terms
+          </a>
+          <a href="#" className="hover:underline">
+            Settings
+          </a>
         </div>
       </div>
     </footer>

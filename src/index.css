@@ -3,24 +3,72 @@
 @tailwind utilities;
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: arial, sans-serif;
   font-size: 100%;
 }
 
+body {
+  margin: 0;
+  background: #fff;
+}
+
 * {
-  font-size: 16px;
   font-family: inherit;
+  box-sizing: border-box;
 }
 
 .App {
   background: #fff;
-}
-
-.outline-block:hover {
-  @apply shadow-lg;
-  outline: 1px solid gray;
-}
-
-.cFlex {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+
+/* Google search bar styles */
+.google-search-bar {
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.google-search-bar:hover,
+.google-search-bar:focus-within {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.google-search-bar.expanded {
+  border-radius: 24px 24px 0 0;
+  border-bottom-color: transparent;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* Google button styles */
+.google-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.google-btn:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.google-btn:focus {
+  border: 1px solid #4285f4;
+  outline: none;
 }

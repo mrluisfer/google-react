@@ -1,5 +1,3 @@
-import React from 'react'
-
 type Props = {
   text: string
   url: string
@@ -7,10 +5,13 @@ type Props = {
 
 export default function FooterLink({ text, url }: Props) {
   return (
-    <p className="pr-5 cursor-pointer select-none leading-6 hover:underline opacity-50 hover:opacity-100 transition-opacity duration-150">
-      <a href={url} target="_blank" rel="noopener noreferrer">
-        {text}
-      </a>{' '}
-    </p>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#70757a] hover:underline text-[14px]"
+    >
+      {text}
+    </a>
   )
 }

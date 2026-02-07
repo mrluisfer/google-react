@@ -1,26 +1,25 @@
-import React from 'react'
 import google_logo from '../assets/Google_logo.svg'
 import FeelingInDesk from './FeelingInDesk'
 import SearchBar from './SearchBar'
 import NavBar from './NavBar'
 import Footer from './Footer'
 
-export const HomePage: React.FC = () => {
+export const HomePage = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="max-w-full mt-5 md:mt-20">
+      <div className="flex-1 flex flex-col items-center justify-center -mt-20">
         <img
           src={google_logo}
-          alt="google_logo"
+          alt="Google"
           draggable="false"
-          className="h-12 mx-auto select-none sm:h-20 md:h-24 select-none"
+          className="h-[92px] mb-6 select-none"
           title="Google"
         />
         <SearchBar />
         <FeelingInDesk />
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }

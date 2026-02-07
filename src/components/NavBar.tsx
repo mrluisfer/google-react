@@ -1,58 +1,40 @@
-import React from 'react'
-import NavBarToggle from './NavBarToggle'
-
-const NavBar: React.FC = () => {
+const NavBar = () => {
   return (
-    <div className="flex items-center justify-between text-gray-600">
-      <div className="flex">
-        <p
-          className="visible ml-4 select-none md:ml-0 sm:cursor-pointer hover:text-gray-800 md:text-xs transition duration-150"
-          title="About mrLuisFer"
+    <div className="flex items-center justify-end px-3 py-2 text-[13px] text-[#202124]">
+      <div className="flex items-center gap-4">
+        <a
+          href="https://gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
         >
-          <a
-            href="https://mrluisfer-linktry.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            About
-          </a>
-        </p>
-        <p
-          className="invisible pl-3 select-none sm:visible sm:pl-4 md:pl-6 sm:cursor-pointer hover:text-gray-800 md:text-xs transition duration-150"
-          title="Chrome Store"
+          Gmail
+        </a>
+        <a
+          href="https://www.google.com/imghp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
         >
-          <a
-            href="https://chrome.google.com/webstore/category/extensions?hl=es"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Store
-          </a>
-        </p>
-      </div>
-
-      <div className="flex items-center text-gray-600">
-        <p className="invisible select-none sm:visible sm:cursor-pointer hover:text-gray-800 md:text-xs transition duration-150">
-          <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
-            Gmail
-          </a>
-        </p>
-        <p className="invisible pl-4 select-none sm:visible sm:pl-5 md:pl-6 sm:cursor-pointer hover:text-gray-800 md:text-xs transition duration-150">
-          <a href="https://photos.google.com/" target="_blank" rel="noopener noreferrer">
-            Images
-          </a>
-        </p>
-        <NavBarToggle />
-        <span
-          className="material-icons-outlined invisible sm:visible sm:text-2xl sm:px-4 sm:cursor-pointer md:pl-2 hover:text-gray-700 md:text-2xl transition duration-150 lg:text-3xl select-none"
-          title="Google Apps"
+          Images
+        </a>
+        <button
+          className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+          title="Google apps"
         >
-          apps
-        </span>
-        <i
-          className="pr-5 text-3xl fas fa-user-circle md:text-2xl sm:p-0 sm:cursor-pointer md:pl-1 hover:text-gray-700 transition duration-150"
+          <svg className="w-6 h-6 text-[#5f6368]" focusable="false" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+            />
+          </svg>
+        </button>
+        <button
+          className="flex items-center justify-center w-8 h-8 rounded-full bg-[#1a73e8] text-white text-sm font-medium hover:shadow-md transition-shadow"
           title="Google Account"
-        ></i>
+        >
+          U
+        </button>
       </div>
     </div>
   )
