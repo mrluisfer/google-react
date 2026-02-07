@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSetDarkMode } from '../../hooks/useSetDarkMode'
 import LightIcon from './LightIcon'
 import DarkMode from './DarkIcon'

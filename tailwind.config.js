@@ -4,7 +4,7 @@ export default {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      body: ['Open Sans', 'sans-serif'],
+      body: ['arial', 'sans-serif'],
     },
     container: {
       center: true,
