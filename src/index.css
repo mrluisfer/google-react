@@ -4,12 +4,14 @@
 
 html {
   font-family: arial, sans-serif;
-  font-size: 100%;
+  font-size: 14px;
 }
 
 body {
   margin: 0;
   background: #fff;
+  color: #202124;
+  overflow-x: hidden;
 }
 
 * {
@@ -38,8 +40,8 @@ body {
 }
 
 .google-search-bar.expanded {
-  border-radius: 24px 24px 0 0;
-  border-bottom-color: transparent;
+  border-radius: 24px;
+  border-color: rgba(223, 225, 229, 0);
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
@@ -53,7 +55,7 @@ body {
   font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
-  line-height: 27px;
+  line-height: 36px;
   height: 36px;
   min-width: 54px;
   text-align: center;

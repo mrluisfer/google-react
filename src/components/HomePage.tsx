@@ -8,12 +8,12 @@ export const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="flex-1 flex flex-col items-center justify-center -mt-20">
+      <div className="flex-1 flex flex-col items-center justify-center pb-[100px]">
         <img
           src={google_logo}
           alt="Google"
           draggable="false"
-          className="h-[92px] mb-6 select-none"
+          className="h-[92px] w-[272px] mb-[24px] select-none"
           title="Google"
         />
         <SearchBar />
